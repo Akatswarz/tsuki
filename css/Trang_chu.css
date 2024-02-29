@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+body{
+    max-width: 85%;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+/* header */
+/* menu */
+#menu{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    height: 80px;
+    align-items: center;
+}
+.logo img{
+    width: 150px;
+    height: 75px;
+}
+.search{
+    display: flex;
+}
+.search-text input{
+    height: 30px;
+    border-radius: 20px;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 10px;
+    width: 300px;
+    margin-right: 15px;
+}
+.search-btn input{
+    border-radius: 10px;
+    background-color: white;
+    padding: 5px 2px;
+    width: 75px;
+}
+.search-btn input:hover{
+    background-color: beige;
+}
+.account{
+    display: flex;
+    width: 200px;
+}
+.account p{
+    font-size: 20px;
+    padding: 5px 6px;
+    margin: 10px auto;
+}
+.account a{
+    color: black;
+}
+.log, .reg{
+    border: 1px solid;
+    border-radius: 20px;
+}
+.log:hover{
+    background-color: black;
+}
+.reg:hover{
+    background-color: black;
+    color: white;
+}
+.log:hover a, .reg:hover a{
+    color: white;
+}
+
+
+/* nav */
+#nav{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    height: 30px;
+    
+}
+#nav>li>a, #nav p{
+    color: white;
+    font-size: 20px;
+}
+#nav>li{
+    display: flex;
+    align-items: center;
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+}
+#nav>li:hover{
+    background-color: rgb(205, 200, 200);
+}
+#nav>li:hover a, #nav>li:hover p{
+    color: black;
+}
+.drop-menu{
+    background-color: white;
+    display: none;
+    position: absolute;
+    top: 120px;
+    width: 100px;
+    border: solid;
+    border-top: none;
+}
+#nav li:hover>.drop-menu{
+    display: block;
+}
+.drop-menu li{
+    text-align: center;
+    padding: 5px 0;
+}
+.drop-menu a{
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+}
+.drop-menu>li:hover{
+    background-color: rgb(205, 200, 200);
+}
+.sub-menu{
+    background-color: white;
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 95.2px;
+    width: 100px;
+    border: solid;
+    border-top: none;
+}
+.drop-menu li:hover>.sub-menu{
+    display: block;
+}
+.sub-menu>li:hover{
+    background-color: rgb(205, 200, 200);
+}
+
+/* banner */
+#banner{
+    margin: 20px 0;
+}
+#banner img{
+    height: 400px;
+    width: 100%;
+}
+
+/* main */
+#main{
+    margin-bottom: 20px;
+}
+/* main-top */
+#main-top{
+    text-align: center;
+}
+#main-top h1{
+    color: red;
+}
+.main_top-item{
+    display: flex;
+    flex-wrap: wrap;
+    border-top-style: solid;
+    border-bottom: solid;
+    padding: 10px 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    justify-content: space-around;
+    align-content: center;
+    background-color: #f8f8f8;
+}
+.main_top-item>.item{
+    margin: 20px 0px;
+}
+.main_top-item>.item>a>img{
+    width: 300px;
+    height: 300px;
+}
+.item{
+    background-color: pink;
+    border-bottom: 1px;
+    border-radius: 20px;
+    padding: 20px;
+}
+.item p{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.item li{
+    margin: 5px auto;
+}
+.item .price-btn img{
+    width: 150px;
+}
+.list-page{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.list-page a{
+    padding: 2px 8px;
+    border: 1px solid;
+    border-radius: 50%;
+    margin: 0px 5px;
+}
+.list-page a:hover{
+    background-color: beige;
+}
+
+/* main-bottom */
+#main-bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+#main-menu{
+    display: block;
+    width: 400px;
+    background-color: pink;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+#main-menu a{
+    font-size: 18px;
+    color: black;
+}
+#main-menu ul>a{
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+#main-menu ul>a:hover{
+    color: rgb(166, 0, 255);
+}
+#main-menu ul{
+    margin: 50px 0;
+}
+#main-menu li{
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-inline-start: 60px;
+    margin-top: 10px;
+}
+#main-menu li:hover{
+    background-color: cornflowerblue;
+    border-radius: 10px;
+}
+#main-product{
+    text-align: center;
+}
+#main-product h1 p{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: red;
+}
+.product{
+    display: flex;
+    float: right;
+    flex-wrap: wrap;
+    border-top-style: solid;
+    justify-content: space-around;
+    align-content: center;
+    background-color: #f8f8f8;
+}
+.product>.item>a>img{
+    width: 250px;
+    height: 250px;
+}
+.product>.item{
+    margin: 20px 0px;
+}
+
+#main-product>.list-page a{
+    margin: 20px 15px;
+}
+
+/* footer */
+#footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    padding: 40px 20px;
+}
+#footer a{
+    color: black;
+}
+#footer li{
+    margin: 10px 0;
+}
+#footer a:hover{
+    text-decoration: 1px underline;
+}
+#footer-info .logo{
+    margin-bottom: 30px;
+    margin-inline-start: 30px;
+}
+.footer_info-mail{
+    margin-top: 10px;
+    display: block;
+    position: relative;
+}
+.footer_info-mail div{
+    margin: 10px 0;
+}
+.footer_info-text input{
+    width: 190px;
+    padding-left: 10px;
+    padding-right: 60px;
+    color: #000;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #cecece;
+}
+.footer_info-btn input{
+    display: block;
+    background-color: #000;
+    position: absolute;
+    top:-1px;
+    right:120px;
+    color: white;
+    font-size: 12px;
+}
+#footer-about h3{
+    margin-bottom: 20px;
+}
+#footer-policy h3{
+    margin-bottom: 20px;
+}
+#footer-store h3{
+    margin-bottom: 20px;
+}
+#footer-store ul{
+    margin-top: 20px;
+}
+#Homepage
+{
+    background-color: white;
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 25px 10px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+#Homepage a{
+    text-decoration: none;
+}
+#Homepage:hover{
+    background-color: black;
+}
+#Homepage:hover a{
+    color: white;
+    text-decoration: none;
+}
+
